@@ -1,0 +1,30 @@
+/* Linkovi koji upućuju na Google */
+a[href*="google"] {
+    color: green;
+  }
+  
+  /* Link ka LINK group web sajtu */
+  a[href*="link-group"] {
+    color: red;
+  }
+  
+  /* Naizmenično obojene paragrafe unutar second-div elementa */
+  #second-div p:nth-child(odd) {
+    color: blue;
+  }
+  
+  #second-div p:nth-child(even) {
+    color: red;
+  }
+  
+  /* Dodavanje teksta "NEW" na krajeve Paragrafa 2 i Paragrafa 3 */
+  #first-div > p:nth-child(2)::after,
+  #first-div > p:nth-child(3)::after {
+    content: " NEW";
+    color: yellow;
+  }
+  
+/* Preko efekat na Paragraph 10 elementu */
+body > p:last-of-type:hover {
+    font-style: italic;
+  }
